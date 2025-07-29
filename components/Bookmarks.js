@@ -9,7 +9,7 @@ function Bookmarks() {
   let articles = <p>No article</p>;
   if (bookmarks.length > 0) {
     articles = bookmarks.map((data, i) => {
-      return <Article key={i} {...data} isBookmarked />;
+      return <Article key={i} {...data} isBookmarked={true} />;
     });
   }
 
